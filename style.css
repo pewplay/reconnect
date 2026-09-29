@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+body {
+  height: 100vh;
+  height: 100dvh;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#stage {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  touch-action: none;
+}
+
+#game {
+  position: absolute;
+  display: block;
+  background: #000;
+  touch-action: none;
+}
+
+#pad {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 6px;
+  touch-action: none;
+}
+
+#pad[hidden] {
+  display: none;
+}
+
+.pad-btn {
+  margin: 0;
+  padding: 0;
+  border: 2px solid rgba(80, 200, 110, 0.55);
+  border-radius: 14px;
+  background: rgba(30, 90, 45, 0.28);
+  color: rgba(210, 255, 220, 0.9);
+  font: bold 18px "Courier New", Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: none;
+  cursor: pointer;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.pad-btn svg {
+  width: 46%;
+  height: 46%;
+  fill: currentColor;
+}
+
+.pad-btn.is-down {
+  background: rgba(80, 200, 110, 0.5);
+  border-color: rgba(150, 255, 170, 0.9);
+}
+
+.pad-btn[data-dir="up"] { grid-area: 1 / 2; }
+.pad-btn[data-dir="left"] { grid-area: 2 / 1; }
+.pad-ok { grid-area: 2 / 2; border-radius: 50%; }
+.pad-btn[data-dir="right"] { grid-area: 2 / 3; }
+.pad-btn[data-dir="down"] { grid-area: 3 / 2; }
+
+.pad-restart {
+  grid-area: 3 / 3;
+  border-color: rgba(200, 200, 200, 0.35);
+  background: rgba(120, 120, 120, 0.18);
+  color: rgba(230, 230, 230, 0.75);
+  transform: scale(0.8);
+}
+
+.pad-restart svg {
+  width: 52%;
+  height: 52%;
+}

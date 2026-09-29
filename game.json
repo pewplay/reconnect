@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
+  "title": "Reconnect",
+  "description": "Guide a computer and a mirrored Wi-Fi signal together past firewalls and Ice Walkers in this free puzzle game you play in your browser.",
+  "about": "Your prankster colleague Silly Sam has knocked your work computer offline again, and only you can reconnect it. Every arrow press moves the computer one way and the Wi-Fi signal the opposite way, so you have to steer both at once and bring them onto exactly the same spot without brushing a single green firewall.\n\nEach of the five days adds a new prank. On Day 2 you must collect two keys, and one of them flips your controls. Day 3 brings Ice Walkers that copy your moves and must never touch you, each other, or a wall. Day 4 adds firewalls that slide back and forth, and Day 5 throws everything together. It is a short, tricky puzzle about mirrored movement, careful planning and good timing.\n\nOriginally created by AviKKi and Gilbishkosma for js13kGames 2018 as Connect.",
+  "howToPlay": "Each move shifts the computer in the direction you press and the Wi-Fi signal in the opposite direction. Bring them onto the same spot to reconnect and clear the day. Touching a firewall ends the attempt, and from Day 3 the Ice Walkers must not touch you, each other, or a firewall. Clear all five days to win.",
+  "controls": [
+    { "input": "Arrow keys / WASD", "action": "Move (the signal mirrors you)" },
+    { "input": "Space / Enter", "action": "Continue, start or retry" },
+    { "input": "R", "action": "Restart the current day" },
+    { "input": "On-screen D-pad", "action": "Move, OK to continue, ↻ to restart" },
+    { "input": "Tap", "action": "Continue, start or retry" }
+  ],
+  "tips": [
+    "The computer and the signal always meet in the middle of the board, so plan your route around the centre.",
+    "Pushing against the outer border stops one piece while the mirrored one keeps moving, which is how you change their spacing.",
+    "On Day 2, the white key flips your controls and the blue key flips them back.",
+    "On Day 4, wait for the sliding firewalls to move away before you slip past them."
+  ],
+  "faq": [
+    { "question": "Is Reconnect free to play?", "answer": "Yes. Reconnect is completely free and runs in your browser, with no download or sign-up." },
+    { "question": "Can I play Reconnect on a phone or tablet?", "answer": "Yes. On touch screens an on-screen D-pad appears next to the board, and you tap to continue; it works in both portrait and landscape." },
+    { "question": "Is my progress saved?", "answer": "Yes. The last day you reached is saved in your browser, so you can pick Continue on the title screen and carry on from there." }
+  ],
+  "category": "Puzzle",
+  "tags": ["puzzle", "maze", "mirror", "logic", "retro"],
+  "author": "AviKKi & Gilbishkosma",
+  "playMode": "SinglePlayer",
+  "orientation": "any",
+  "cover": "cover.png",
+  "screenshots": ["screenshots/1.png", "screenshots/2.png", "screenshots/3.png"],
+  "added": "2026-09-28",
+  "draft": false
+}
